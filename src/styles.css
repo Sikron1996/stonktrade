@@ -23,14 +23,15 @@ body::before{
   content:"";
   position:fixed; inset:0;
   background:
-    linear-gradient(rgba(255,255,255,.018) 1px,transparent 1px),
-    linear-gradient(90deg,rgba(255,255,255,.018) 1px,transparent 1px);
-  background-size:40px 40px;
+    radial-gradient(circle at 18% 12%,rgba(200,255,0,.07),transparent 30%),
+    radial-gradient(circle at 82% 42%,rgba(200,255,0,.045),transparent 34%),
+    url("/assets/terminal-bg.svg") center/cover no-repeat;
   pointer-events:none;
   z-index:-2;
+  opacity:.82;
 }
 .noise{
-  position:fixed; inset:0; pointer-events:none; opacity:.05; z-index:20;
+  position:fixed; inset:0; pointer-events:none; opacity:.025; z-index:20;
   background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 140 140' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.55'/%3E%3C/svg%3E");
 }
 .shell{width:min(1180px,calc(100% - 40px));margin:auto}

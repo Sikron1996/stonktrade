@@ -1,29 +1,22 @@
-# StonkMiners — exact AppKit wallet transplant
+# StonkMiners website — Robinhood Chain
 
-The wallet connection architecture is copied from the uploaded working project:
+Configured for the deployed StonkMiners contract.
 
-- `createAppKit` + `EthersAdapter`
-- the same Reown Project ID
-- `useAppKit`, `useAppKitAccount`, `useAppKitProvider`
-- the same `WalletProvider` / React Context pattern
-- the same Connect/Account modal behavior
-- the same chain switch and add-chain flow
+- Network: Robinhood Chain Mainnet
+- Chain ID: 4663
+- Contract: 0xa1FD0be9F3338D2048bA1DE62374b806F7765D43
+- Price: 0.00005 ETH
+- Supply: 5,555
+- Wallet limit: 100
+- Wallet connection: Reown AppKit / WalletConnect
 
-Only project branding and collection configuration were changed to StonkMiners.
+## Run locally
 
-## Contract setup
-
-Edit `src/config.js` after deployment. Insert the NFT contract address and final chain details.
-
-## Run
-
-```bash
+```powershell
 npm install
 npm run dev
 ```
 
-## Build
+## Deploy
 
-```bash
-npm run build
-```
+Upload to GitHub and import into Vercel.

@@ -118,16 +118,7 @@ function StonkMinersApp() {
       const signer = await browserProvider.getSigner();
       const contract = new Contract(CONFIG.nft.address, NFT_ABI, signer);
       const value = parseEther((Number(CONFIG.nft.mintPrice) * quantity).toFixed(8));
-      let tx;
-      try {
-        tx = await contract.mint(quantity, { value });
-      } catch (firstError) {
-        try {
-          tx = await contract.publicMint(quantity, { value });
-        } catch {
-          throw firstError;
-        }
-      }
+      const tx = await contract.mint(quantity, { value });
       setStatus(`Transaction sent: ${shortAddress(tx.hash)}`);
       await tx.wait();
       setStatus(`Success — ${quantity} StonkMiner${quantity > 1 ? "s" : ""} minted.`);
@@ -189,7 +180,7 @@ function StonkMinersApp() {
               <div className="price-row"><div><small>Price per NFT</small><strong>0.00005 ETH</strong></div><div><small>Total</small><strong>{total} ETH</strong></div></div>
               <div className="quantity-control"><button onClick={() => setQuantity(Math.max(1, quantity - 1))}>−</button><div><span>Quantity</span><strong>{quantity}</strong></div><button onClick={() => setQuantity(Math.min(CONFIG.nft.maxPerWallet, quantity + 1))}>+</button></div>
               <button className="mint-button" onClick={mint} disabled={busy}>{busy ? "Minting…" : address ? (CONFIG.nft.address ? `Mint ${quantity} StonkMiner${quantity > 1 ? "s" : ""}` : "Contract address required") : "Connect wallet to mint"}</button>
-              <p className="contract-note">WalletConnect/AppKit is active. Add the contract address and final network in <code>src/config.js</code>.</p>
+              <p className="contract-note">Minting on Robinhood Chain • Contract: {shortAddress(CONFIG.nft.address)}</p>
             </div>
           </div>
         </section>

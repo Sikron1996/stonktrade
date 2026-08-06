@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice">
+  <rect width="1600" height="1000" fill="#070909"/>
+  <g fill="none" stroke="#c8ff00" stroke-opacity="0.18">
+    <path stroke-width="3" d="M40 690 L120 655 L200 670 L280 590 L360 620 L440 510 L520 540 L600 425 L680 470 L760 360 L840 400 L920 315 L1000 350 L1080 250 L1160 290 L1240 205 L1320 235 L1400 150 L1560 185"/>
+    <path stroke-width="1.5" d="M40 760 L130 735 L220 745 L310 710 L400 725 L490 675 L580 690 L670 635 L760 650 L850 600 L940 615 L1030 555 L1120 575 L1210 520 L1300 540 L1390 490 L1560 510"/>
+  </g>
+  <g stroke="#c8ff00" stroke-opacity="0.16" stroke-width="3">
+    <line x1="130" y1="510" x2="130" y2="660"/><rect x="118" y="545" width="24" height="70" fill="#c8ff00" fill-opacity="0.12"/>
+    <line x1="230" y1="480" x2="230" y2="620"/><rect x="218" y="505" width="24" height="82" fill="#c8ff00" fill-opacity="0.12"/>
+    <line x1="330" y1="430" x2="330" y2="590"/><rect x="318" y="465" width="24" height="70" fill="#c8ff00" fill-opacity="0.12"/>
+    <line x1="430" y1="390" x2="430" y2="545"/><rect x="418" y="420" width="24" height="85" fill="#c8ff00" fill-opacity="0.12"/>
+    <line x1="530" y1="335" x2="530" y2="505"/><rect x="518" y="365" width="24" height="95" fill="#c8ff00" fill-opacity="0.12"/>
+    <line x1="630" y1="300" x2="630" y2="465"/><rect x="618" y="332" width="24" height="88" fill="#c8ff00" fill-opacity="0.12"/>
+  </g>
+  <g font-family="monospace" fill="#c8ff00" fill-opacity="0.13">
+    <text x="54" y="82" font-size="18">STONK TERMINAL // MARKET ONLINE</text>
+    <text x="54" y="116" font-size="12">BLOCK 005555  |  HASH 0x5T0NK...M1N3R</text>
+    <text x="1180" y="88" font-size="15">ORDER BOOK</text>
+    <text x="1180" y="120" font-size="12">SELL  0.00008  44</text>
+    <text x="1180" y="144" font-size="12">SELL  0.00007  82</text>
+    <text x="1180" y="168" font-size="12">SELL  0.00006  31</text>
+    <text x="1180" y="204" font-size="12">LAST  0.00005</text>
+    <text x="1180" y="240" font-size="12">BUY   0.00004  77</text>
+    <text x="1180" y="264" font-size="12">BUY   0.00003  95</text>
+    <text x="1180" y="288" font-size="12">BUY   0.00002  18</text>
+    <text x="70" y="890" font-size="13">VOLUME</text>
+    <text x="70" y="920" font-size="12">24H +5555.00%   HIGH 0.00009   LOW 0.00001</text>
+  </g>
+  <g fill="#c8ff00" fill-opacity="0.08">
+    <rect x="80" y="930" width="24" height="28"/><rect x="118" y="915" width="24" height="43"/><rect x="156" y="900" width="24" height="58"/>
+    <rect x="194" y="922" width="24" height="36"/><rect x="232" y="875" width="24" height="83"/><rect x="270" y="892" width="24" height="66"/>
+    <rect x="308" y="855" width="24" height="103"/><rect x="346" y="885" width="24" height="73"/><rect x="384" y="835" width="24" height="123"/>
+  </g>
+  <g stroke="#c8ff00" stroke-opacity="0.08" stroke-width="1">
+    <line x1="1080" y1="70" x2="1080" y2="330"/><line x1="1150" y1="70" x2="1150" y2="330"/>
+    <line x1="1080" y1="100" x2="1540" y2="100"/><line x1="1080" y1="190" x2="1540" y2="190"/><line x1="1080" y1="300" x2="1540" y2="300"/>
+  </g>
+</svg>

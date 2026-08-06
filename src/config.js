@@ -21,8 +21,8 @@ export const CONFIG = {
     projectId: "4f71172824a0ea69b0270161482356fe"
   },
   social: {
-    x: "#",
-    opensea: "#"
+    x: "https://x.com/StonkMiners",
+    opensea: "https://opensea.io/collection/stonkminers"
   }
 };
 
